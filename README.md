@@ -50,7 +50,7 @@ Submodule shortcuts: [Lab 1](./Original-Lab-Repositories/Lab-1-Requirements/), [
 
 ## Repository note
 
-Markdown guides, Lab 3's editable diagram source, and Lab 4's Python source are available directly in this consolidated repository. Large binary deliverables (PDF, DOCX, PNG, and MP4) are linked to the original lab repositories to avoid creating competing copies.
+The required deliverables (PDF, DOCX, PNG, and MP4) are included as files in the consolidated lab folders, alongside the editable Lab 3 diagram source and Lab 4 Python source. The original lab repositories are also preserved as submodules and linked above for reference.
 
 ## Submission reminder
 
