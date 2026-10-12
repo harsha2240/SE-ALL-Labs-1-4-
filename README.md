@@ -12,8 +12,8 @@ This repository consolidates navigation for Labs 1–4. Labs 1–3 use the **Cus
 | Lab | Focus | Contents | Original repository |
 |---|---|---|---|
 | Lab 1 | Requirements engineering | Requirements table, use-case diagram, use-case flow, complete DOCX/PDF submission | [PES1UG24CS163_LAB_01](https://github.com/harsha2240/PES1UG24CS163_LAB_01) |
-| Lab 2 | Agile backlog and sprint simulation using Jira | Lab report PDF and Jira exercise evidence | [PES1UG24CS163_LAB_02_JIRA](https://github.com/harsha2240/PES1UG24CS163_LAB_02_JIRA) |
-| Lab 3 | Component modelling and architecture selection | Editable component diagram, PNG/PDF exports, architecture justification, complete submission PDF | [PES1UG24CS163_LAB_03](https://github.com/harsha2240/PES1UG24CS163_LAB_03) |
+| Lab 2 | Agile backlog and sprint simulation using Jira | Lab report PDF | [PES1UG24CS163_LAB_02_JIRA](https://github.com/harsha2240/PES1UG24CS163_LAB_02_JIRA) |
+| Lab 3 | Component modelling and architecture selection | Editable component diagram source, PDF export, architecture justification, complete submission PDF | [PES1UG24CS163_LAB_03](https://github.com/harsha2240/PES1UG24CS163_LAB_03) |
 | Lab 4 | Vibe coding / Q*bert repair | Python game, before/after videos, chat history evidence | [35_qbert](https://github.com/harsha2240/35_qbert) |
 
 ## Consolidated lab folders
