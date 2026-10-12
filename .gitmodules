@@ -1,0 +1,15 @@
+[submodule "Lab 1"]
+	path = Original-Lab-Repositories/Lab-1-Requirements
+	url = https://github.com/harsha2240/PES1UG24CS163_LAB_01.git
+
+[submodule "Lab 2"]
+	path = Original-Lab-Repositories/Lab-2-Jira
+	url = https://github.com/harsha2240/PES1UG24CS163_LAB_02_JIRA.git
+
+[submodule "Lab 3"]
+	path = Original-Lab-Repositories/Lab-3-Architecture
+	url = https://github.com/harsha2240/PES1UG24CS163_LAB_03.git
+
+[submodule "Lab 4"]
+	path = Original-Lab-Repositories/Lab-4-Qbert
+	url = https://github.com/harsha2240/35_qbert.git
