@@ -1,0 +1,45 @@
+name: Copy remaining lab deliverables
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/copy-remaining-labs.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  copy-deliverables:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out consolidated repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download original lab repositories
+        run: |
+          git clone --depth 1 https://github.com/harsha2240/PES1UG24CS163_LAB_02_JIRA.git /tmp/lab2
+          git clone --depth 1 https://github.com/harsha2240/35_qbert.git /tmp/lab4
+
+      - name: Copy remaining deliverables
+        run: |
+          mkdir -p Lab-2-Jira Lab-4-Qbert
+          cp /tmp/lab2/PES1UG24CS163_LAB_02_JIRA.pdf Lab-2-Jira/
+          cp /tmp/lab4/Lab-4/BEFORE.mp4 Lab-4-Qbert/
+          cp /tmp/lab4/Lab-4/AFTER.mp4 Lab-4-Qbert/
+          cp /tmp/lab4/Lab-4/VIBE_CODING_CHAT_HISTORY.pdf Lab-4-Qbert/
+
+      - name: Commit copied files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Lab-2-Jira/PES1UG24CS163_LAB_02_JIRA.pdf Lab-4-Qbert/BEFORE.mp4 Lab-4-Qbert/AFTER.mp4 Lab-4-Qbert/VIBE_CODING_CHAT_HISTORY.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "Add remaining Lab 2 and Lab 4 deliverables"
+            git push
+          else
+            echo "No missing deliverables to add."
+          fi
