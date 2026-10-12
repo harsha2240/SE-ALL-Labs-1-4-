@@ -23,6 +23,24 @@ This repository consolidates navigation for Labs 1–4. Labs 1–3 use the **Cus
 - **[Lab 3 – Architecture](./Lab-3-Architecture/)**: [complete submission PDF](https://github.com/harsha2240/PES1UG24CS163_LAB_03/blob/main/PES1UG24CS163_Lab3_COMPLETE_SUBMISSION.pdf), [editable draw.io diagram in this repo](./Lab-3-Architecture/PES1UG24CS163_Lab3_Component_Diagram.drawio)
 - **[Lab 4 – Q*bert](./Lab-4-Qbert/)**: [Python source in this repo](./Lab-4-Qbert/game.py), [before video](https://github.com/harsha2240/35_qbert/blob/main/Lab-4/BEFORE.mp4), [after video](https://github.com/harsha2240/35_qbert/blob/main/Lab-4/AFTER.mp4), [LLM chat history](https://github.com/harsha2240/35_qbert/blob/main/Lab-4/VIBE_CODING_CHAT_HISTORY.pdf)
 
+## Get the complete lab files in one checkout
+
+The `Original-Lab-Repositories/` directory contains Git submodules pointing to the four original repositories. This keeps each original submission intact and makes all its files available together when the submodules are initialized.
+
+Clone the consolidated project and all four lab repositories:
+
+```bash
+git clone --recurse-submodules https://github.com/harsha2240/SE-ALL-Labs-1-4-.git
+```
+
+If you already cloned without submodules, run this inside the repository:
+
+```bash
+git submodule update --init --recursive
+```
+
+Submodule shortcuts: [Lab 1](./Original-Lab-Repositories/Lab-1-Requirements/), [Lab 2](./Original-Lab-Repositories/Lab-2-Jira/), [Lab 3](./Original-Lab-Repositories/Lab-3-Architecture/), and [Lab 4](./Original-Lab-Repositories/Lab-4-Qbert/).
+
 ## How the labs connect
 
 1. **Lab 1** defines requirements and use-case behaviour for the subscription box scheduler.
